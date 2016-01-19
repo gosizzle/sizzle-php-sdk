@@ -5,7 +5,6 @@ namespace SizzlePHP;
  * This class is for sending curl requests to the API.
  */
 class ApiCall
-extends \PHPUnit_Framework_TestCase
 {
     protected $baseUrl;
 
