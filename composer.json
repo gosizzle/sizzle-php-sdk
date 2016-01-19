@@ -3,6 +3,7 @@
   "description": "This SDK is for accessing the Sizzle API",
   "require-dev": {
     "phpunit/phpunit": "4.*",
-    "mockery/mockery": "^0.9.4"
+    "mockery/mockery": "^0.9.4",
+    "squizlabs/php_codesniffer": "~2.3"
   }
 }
