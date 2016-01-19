@@ -16,4 +16,4 @@ To run all the unit tests
 
 ## Contributing
 
-Information on contributing can be found [here](Chttps://github.com/gosizzle/sizzle-php-sdk/blob/master/CONTRIBUTING.md).
+Information on contributing can be found [here](https://github.com/gosizzle/sizzle-php-sdk/blob/master/CONTRIBUTING.md).
