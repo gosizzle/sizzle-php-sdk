@@ -82,7 +82,7 @@ class ApiCall
         $url = $this->baseUrl . '/' . $endpoint;
         $handle = curl_init();
         curl_setopt($handle, CURLOPT_POST, true);
-        curl_setopt($handle, CURLOPT_COOKIE, TEST_COOKIE);
+        //curl_setopt($handle, CURLOPT_COOKIE, TEST_COOKIE);
         $fieldsString = "";
         foreach ($variables as $key=>$value) {
             $fieldsString .= $key.'='.$value.'&';

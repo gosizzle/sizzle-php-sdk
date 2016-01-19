@@ -2,6 +2,7 @@
 
 [![Code Climate](https://codeclimate.com/github/gosizzle/sizzle-php-sdk/badges/gpa.svg)](https://codeclimate.com/github/gosizzle/sizzle-php-sdk)
 [![Latest Stable Version](https://img.shields.io/packagist/v/gosizzle/sizzle-php-sdk.svg)](https://packagist.org/packages/gosizzle/sizzle-php-sdk)
+[![Build Status](https://travis-ci.org/gosizzle/sizzle-php-sdk.svg?branch=master)](https://travis-ci.org/gosizzle/sizzle-php-sdk)
 
 This SDK is for accessing the Sizzle API.
 
