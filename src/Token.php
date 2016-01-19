@@ -5,7 +5,6 @@ namespace SizzlePHP;
  * This class is for creating, updating & deleting tokens.
  */
 class Token
-extends \PHPUnit_Framework_TestCase
 {
     protected $endpoint;
     protected $apiCall;
