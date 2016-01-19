@@ -18,6 +18,11 @@
   "support": {
     "issues": "https://github.com/gosizzle/sizzle-php-sdk/issues"
   },
+  "autoload": {
+    "psr-4": {
+      "SizzlePHP\\": "src/"
+    }
+  },
   "require": {
     "php": ">=5.3"
   },
