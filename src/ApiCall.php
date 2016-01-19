@@ -81,19 +81,19 @@ extends \PHPUnit_Framework_TestCase
     protected function curl($type, $endpoint, $variables)
     {
         $url = $this->baseUrl . '/' . $endpoint;
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_POST, true);
-        curl_setopt($ch, CURLOPT_COOKIE, TEST_COOKIE);
-        $fields_string = "";
+        $handle = curl_init();
+        curl_setopt($handle, CURLOPT_POST, true);
+        curl_setopt($handle, CURLOPT_COOKIE, TEST_COOKIE);
+        $fieldsString = "";
         foreach ($variables as $key=>$value) {
-            $fields_string .= $key.'='.$value.'&';
+            $fieldsString .= $key.'='.$value.'&';
         }
-        $fields_string = rtrim($fields_string, '&');
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_URL, $url);
-        $response = curl_exec($ch);
-        $statusCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        $fieldsString = rtrim($fieldsString, '&');
+        curl_setopt($handle, CURLOPT_POSTFIELDS, $fieldsString);
+        curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($handle, CURLOPT_URL, $url);
+        $response = curl_exec($handle);
+        $statusCode = curl_getinfo($handle, CURLINFO_HTTP_CODE);
         return array('statusCode'=>$statusCode, 'response'=>$response);
     }
 }

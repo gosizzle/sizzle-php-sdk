@@ -17,9 +17,9 @@ extends \PHPUnit_Framework_TestCase
      */
     public function testConstructor()
     {
-        $ApiCall = new ApiCall();
-        $this->assertEquals('SizzlePHP\ApiCall', get_class($ApiCall));
-        $this->assertFalse(isset($ApiCall->baseUrl));
+        $apiCall = new ApiCall();
+        $this->assertEquals('SizzlePHP\ApiCall', get_class($apiCall));
+        $this->assertFalse(isset($apiCall->baseUrl));
     }
 
     /**
@@ -27,8 +27,8 @@ extends \PHPUnit_Framework_TestCase
      */
     public function testDelete()
     {
-        $ApiCall = new ApiCall();
-        $this->assertTrue(method_exists($ApiCall, 'delete'));
+        $apiCall = new ApiCall();
+        $this->assertTrue(method_exists($apiCall, 'delete'));
     }
 
     /**
@@ -36,8 +36,8 @@ extends \PHPUnit_Framework_TestCase
      */
     public function testGet()
     {
-        $ApiCall = new ApiCall();
-        $this->assertTrue(method_exists($ApiCall, 'get'));
+        $apiCall = new ApiCall();
+        $this->assertTrue(method_exists($apiCall, 'get'));
     }
 
     /**
@@ -45,8 +45,8 @@ extends \PHPUnit_Framework_TestCase
      */
     public function testPost()
     {
-        $ApiCall = new ApiCall();
-        $this->assertTrue(method_exists($ApiCall, 'post'));
+        $apiCall = new ApiCall();
+        $this->assertTrue(method_exists($apiCall, 'post'));
     }
 
     /**
@@ -54,7 +54,7 @@ extends \PHPUnit_Framework_TestCase
      */
     public function testPut()
     {
-        $ApiCall = new ApiCall();
-        $this->assertTrue(method_exists($ApiCall, 'put'));
+        $apiCall = new ApiCall();
+        $this->assertTrue(method_exists($apiCall, 'put'));
     }
 }

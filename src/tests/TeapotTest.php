@@ -29,14 +29,14 @@ extends \PHPUnit_Framework_TestCase
     public function testDelete()
     {
         // no vars
-        $ApiCall = new ApiCall();
-        $result = $ApiCall->delete($this->endpoint, array());
+        $apiCall = new ApiCall();
+        $result = $apiCall->delete($this->endpoint, array());
         $this->assertEquals(418, $result['statusCode']);
         $this->assertEquals("I'm a teapot", $result['response']);
 
         // with vars
-        $ApiCall = new ApiCall();
-        $result = $ApiCall->delete($this->endpoint, array('var1'=>1, 'var2'=>6));
+        $apiCall = new ApiCall();
+        $result = $apiCall->delete($this->endpoint, array('var1'=>1, 'var2'=>6));
         $this->assertEquals(418, $result['statusCode']);
         $this->assertEquals("I'm a teapot", $result['response']);
     }
@@ -47,14 +47,14 @@ extends \PHPUnit_Framework_TestCase
     public function testGet()
     {
         // no vars
-        $ApiCall = new ApiCall();
-        $result = $ApiCall->get($this->endpoint, array());
+        $apiCall = new ApiCall();
+        $result = $apiCall->get($this->endpoint, array());
         $this->assertEquals(418, $result['statusCode']);
         $this->assertEquals("I'm a teapot", $result['response']);
 
         // with vars
-        $ApiCall = new ApiCall();
-        $result = $ApiCall->get($this->endpoint, array('var1'=>1, 'var2'=>6));
+        $apiCall = new ApiCall();
+        $result = $apiCall->get($this->endpoint, array('var1'=>1, 'var2'=>6));
         $this->assertEquals(418, $result['statusCode']);
         $this->assertEquals("I'm a teapot", $result['response']);
     }
@@ -65,14 +65,14 @@ extends \PHPUnit_Framework_TestCase
     public function testPost()
     {
         // no vars
-        $ApiCall = new ApiCall();
-        $result = $ApiCall->post($this->endpoint, array());
+        $apiCall = new ApiCall();
+        $result = $apiCall->post($this->endpoint, array());
         $this->assertEquals(418, $result['statusCode']);
         $this->assertEquals("I'm a teapot", $result['response']);
 
         // with vars
-        $ApiCall = new ApiCall();
-        $result = $ApiCall->post($this->endpoint, array('var1'=>1, 'var2'=>6));
+        $apiCall = new ApiCall();
+        $result = $apiCall->post($this->endpoint, array('var1'=>1, 'var2'=>6));
         $this->assertEquals(418, $result['statusCode']);
         $this->assertEquals("I'm a teapot", $result['response']);
     }
@@ -83,14 +83,14 @@ extends \PHPUnit_Framework_TestCase
     public function testPut()
     {
         // no vars
-        $ApiCall = new ApiCall();
-        $result = $ApiCall->put($this->endpoint, array());
+        $apiCall = new ApiCall();
+        $result = $apiCall->put($this->endpoint, array());
         $this->assertEquals(418, $result['statusCode']);
         $this->assertEquals("I'm a teapot", $result['response']);
 
         // with vars
-        $ApiCall = new ApiCall();
-        $result = $ApiCall->put($this->endpoint, array('var1'=>1, 'var2'=>6));
+        $apiCall = new ApiCall();
+        $result = $apiCall->put($this->endpoint, array('var1'=>1, 'var2'=>6));
         $this->assertEquals(418, $result['statusCode']);
         $this->assertEquals("I'm a teapot", $result['response']);
     }
