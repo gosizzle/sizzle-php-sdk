@@ -1,6 +1,17 @@
 {
   "name": "gosizzle/sizzle-php-sdk",
   "description": "This SDK is for accessing the Sizzle API",
+  "keywords": ["recruiting","email"],
+  "homepage": "https://github.com/gosizzle/sizzle-php-sdk",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bradley Wogsland",
+      "email": "bradley@wogsland.org",
+      "homepage": "http://bradley.wogsland.org",
+      "role": "Senior Developer"
+    }
+  ],
   "require-dev": {
     "phpunit/phpunit": "4.*",
     "mockery/mockery": "^0.9.4",
