@@ -4,7 +4,7 @@
 [![Latest Stable Version](https://img.shields.io/packagist/v/gosizzle/sizzle-php-sdk.svg)](https://packagist.org/packages/gosizzle/sizzle-php-sdk)
 [![Build Status](https://travis-ci.org/gosizzle/sizzle-php-sdk.svg?branch=master)](https://travis-ci.org/gosizzle/sizzle-php-sdk)
 
-This SDK is for accessing the Sizzle API.
+This SDK is for accessing the S!zzle API.
 
 ## Installation
 
